@@ -14,3 +14,25 @@ function checkInputs(){
     const passwordValue = password.value
     const passwordConfirmationValue = passwordConfirmation.value
 }
+
+if(usernameValue === ''){
+    setErrorFor(username, "O nome do usuário é obrigatório.")
+}
+
+function setErrorFor(input, message){
+const formControl = input.parentElement; // esse parent element vai pegar a div pai desse input
+const small = formControl.querySelector('small')
+
+// Adiciona a mensagem de erro
+small.innerText = message
+
+// Adiciona a classe de erro
+
+
+}
+
+function setSucessFor(input){
+    const formControl = input.parentElement;
+
+    // Adicionar a classe de sucesso
+}
